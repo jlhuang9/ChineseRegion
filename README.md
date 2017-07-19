@@ -23,7 +23,7 @@ region_spider.py 在index 中做分组  按省份运行多进程,要不会好�
         links = response.css('.provincetable tr td a')
         self.title=len(links)
         for index in range(len(links)):
-            # 这里建议用多进程要不或很慢  一共31个组  其中
+            # 这里建议用多进程要不或很慢  一共31个组 
             # if index!=1:
             #     continue
             link1 = links[index]
